@@ -1,1 +1,82 @@
-Tässä on tekstiä
+Seuraavaa tehtävää tehdessäsi kannattaa terminaaliin avata uusi 
+välilehti, jotta voit pitää gitk:ta käynnissä.
+
+Kopioi tiedostoon tiedosto.txt jostain paljon tekstiä ja commitoi 
+tiedosto
+Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää 
+tekstiä
+commitoi muutosten jälkeen
+Päivitä gitk:n näkymä (file/update) ja katso miten muutokset näkyvät 
+(tarkastele kahta ylintä committia)
+Valitse oikeasta alakulmasta patch ja vasemmasta diff
+Näin näet commitin aiheuttamat muutokset diff-muodossa
+Jos oikealta on valittuna tree, näkyy vasemmalla puolella (valinnasta 
+riippumatta) tiedostojen commitin aikainen tilanne
+Jos käytät sourcetreetä, sen pitäisi päivittyä automaattisesti ja 
+näyttää muutos diff-muodossa
+#Tehtävä 8: Tiedoston poistaminen ja uudelleennimentä
+
+Poista tiedosto toinen.txt
+Suorita git status
+Commitoi muutos
+Poista ensin tiedosto gitin alaisuudesta komennolla git rm
+varmista komennolla git status, että kaikki on niinkuin kuuluukin
+muuta tiedoston tiedosto.txt nimeksi eka.txt
+uudelleennimentä tapahtuu komennolla mv
+Suorita git status
+Miten git käsittelee uudelleennimennän?
+Commitoi muutos
+#Tehtävä 9: git add -p
+
+Tee jotain muutoksia tiedostoihin eka.txt ja kolmas.txt
+Tee sekä lisäyksiä että poistoja
+lisää ne commitoitavaksi komennolla git add -p
+Git näyttää nyt jokaisen tekemäsi muutoksen patch-muodossa ja pyytää 
+varmistamaan lisätäänkö muutos commitoivaksi
+Hyväksy painamalla y ja enter
+Commitoi muutokset
+Tee tiedostoihin tehtyjen muutosten commitoitavaksi lisääminen aina 
+komennolla git add -p, näin pääset tarkastamaan, että muutokset ovat 
+juuri ne mitä oletat olevasi lisäämässä
+Huomaa, että kokonaan uudet tiedostot eivät siirry committoitavaksi 
+komennolla git add -p
+#Tehtävä 10: Muutosten peruminen
+
+Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
+
+Tee nyt joku muutos tiedostoon eka.txt, älä lisää tiedostoa 
+committoitavaksi
+Suorita komento git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working 
+directory)
+	modified:   eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka 
+eivät ole “staged for commit”, eli lisättyjä commitoitavaksi.
+
+Päätetäänkin perua muutokset. Se onnistuu komennolla git restore 
+eka.txt
+Kun suoritat uudelleen komennon git status huomaat, että working 
+directory ei enää sisällä muutoksia:
+Seuraavaa tehtävää tehdessäsi kannattaa terminaaliin avata uusi 
+välilehti, jotta voit pitää gitk:ta käynnissä.
+
+Kopioi tiedostoon tiedosto.txt jostain paljon tekstiä ja commitoi 
+tiedosto
+Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää 
+tekstiä
+commitoi muutosten jälkeen
+Päivitä gitk:n näkymä (file/update) ja katso miten muutokset näkyvät 
+(tarkastele kahta ylintä committia)
+Valitse oikeasta alakulmasta patch ja vasemmasta diff
+Näin näet commitin aiheuttamat muutokset diff-muodossa
+Jos oikealta on valittuna tree, näkyy vasemmalla puolella (valinnasta 
+riippumatta) tiedostojen commitin aikainen tilanne
+Jos käytät sourcetreetä, sen pitäisi päivittyä automaattisesti ja 
+näyttää muutos diff-muodossa Tässä on 
+tekstiä
