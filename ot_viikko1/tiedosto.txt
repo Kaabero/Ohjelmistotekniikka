@@ -1,6 +1,3 @@
-Seuraavaa tehtävää tehdessäsi kannattaa terminaaliin avata uusi 
-välilehti, jotta voit pitää gitk:ta käynnissä.
-
 Kopioi tiedostoon tiedosto.txt jostain paljon tekstiä ja commitoi 
 tiedosto
 Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää 
@@ -68,8 +65,7 @@ välilehti, jotta voit pitää gitk:ta käynnissä.
 
 Kopioi tiedostoon tiedosto.txt jostain paljon tekstiä ja commitoi 
 tiedosto
-Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää 
-tekstiä
+Hieman ttekstiä lisää poiston jälkeenekstiä
 commitoi muutosten jälkeen
 Päivitä gitk:n näkymä (file/update) ja katso miten muutokset näkyvät 
 (tarkastele kahta ylintä committia)
